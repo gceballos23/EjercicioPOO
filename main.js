@@ -13,7 +13,7 @@ var curso1 = new curso_1.Curso(input.question("Ingrese Nombre del Curso: "), inp
 console.log("curso creado" + curso1.getModalidad());
 console.log("CREA CAPACITACION");
 var capacitacion1 = new capacitacion_1.Capacitacion(curso1);
-console.log("CREA CAPACITACION" + capacitacion1.getCurso());
+console.log("CREA CAPACITACION");
 console.log("ASOCIAR INSTRUCTOR");
-instructor1.InscribirACurso(capacitacion1);
+instructor1.inscribirACurso(capacitacion1);
 console.log("LISTADO DE CURSOS" + instructor1);

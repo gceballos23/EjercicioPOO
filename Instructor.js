@@ -9,7 +9,7 @@ var Instructor = /** @class */ (function () {
         this.cupoModalidadVirtual = pCupoModalidadVirtual;
         this.capacitaciones = [];
     }
-    Instructor.prototype.InscribirACurso = function (pCapacitacion) {
+    Instructor.prototype.inscribirACurso = function (pCapacitacion) {
         this.capacitaciones.push(pCapacitacion);
     };
     return Instructor;

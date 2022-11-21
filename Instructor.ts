@@ -1,12 +1,13 @@
-import {Capacitacion} from "./capacitacion";
-export class Instructor{
-    private dni : number;
-    private nombre : string;
-    private apellido: string;
-    private cupoModalidadVirtual : number;
-    private capacitaciones : Capacitacion[];
+import { Capacitacion } from "./capacitacion";
 
-    constructor(pDni:number, pNombre:string, pApellido: string, pCupoModalidadVirtual:number){
+export class Instructor {
+    private dni: number;
+    private nombre: string;
+    private apellido: string;
+    private cupoModalidadVirtual: number;
+    private capacitaciones: Capacitacion[];
+
+    constructor(pDni: number, pNombre: string, pApellido: string, pCupoModalidadVirtual: number) {
         this.dni = pDni;
         this.nombre = pNombre;
         this.apellido = pApellido;
@@ -14,7 +15,7 @@ export class Instructor{
         this.capacitaciones = [];
     }
 
-    public InscribirACurso(pCapacitacion: Capacitacion):void{
+    public inscribirACurso(pCapacitacion: Capacitacion): void {
         this.capacitaciones.push(pCapacitacion);
     }
 }
